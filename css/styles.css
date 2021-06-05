@@ -68,15 +68,11 @@ display:inline-block;
 color: white;
 
 }
-.nav-link:hover {
+/* .nav-link:hover {
   display: inline-block;
   color: #508d9f;
-}
-.c {
-  display: inline-block;
-  color: white;
+} */
 
-}
 
 
 
@@ -186,13 +182,13 @@ font-size: 0;
   padding: 100px;
 }
 .le{
-  text-align: left;
-    padding-left: 6%;
+  text-align: Center;
+
 }
 .he{
   color: grey;
 
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   padding-top:7%;
 
   line-height: 1.5;
@@ -201,7 +197,7 @@ font-size: 0;
 
   color: white;
 
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   line-height: 1.5;
 }
 .he2{
@@ -213,6 +209,7 @@ padding-bottom: 2%;
 }
 .hb{
   color: orange;
+  display: block;
 
 }
 .card{
@@ -234,14 +231,33 @@ padding-bottom: 2%;
 
 
 /* Footer Section */
+#footer .container-fluid{
+  padding: 7% 15%;
+}
+.fo{
 
+    color: grey;
+
+    font-size: 2.5rem;
+
+
+    line-height: 1.5;
+
+}
+.rand {
+  /* font-family: "Snell Roundhand", cursive; */
+
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  color: white;
+    font-weight: bold;
+}
 
 .social-icon {
   margin: 20px 10px;
 }
 
 @media (max-width: 1028px) {
-
   #title {
     text-align: center;
   }
@@ -250,7 +266,11 @@ padding-bottom: 2%;
     position: static;
     transform: rotate(0);
   }
-  .cir1,.cir2 {
+  .cir1,.cir2,.sc {
     visibility: hidden;
+    height: 0px;
+    width: 0px;
+
   }
-}
+
+  }
