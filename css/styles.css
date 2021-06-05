@@ -254,6 +254,7 @@ padding-bottom: 2%;
 @media (max-width: 1028px) {
   #title {
     text-align: center;
+    color:black;
   }
 
   .title-image {
