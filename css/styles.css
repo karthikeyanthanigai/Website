@@ -3,6 +3,8 @@ body {
 
   font-family: "Montserrat";
   text-align: center;
+  margin: 0;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,6 +32,7 @@ p {
 /* Containers */
 
 .container-fluid{
+  margin: 0;
   padding: 7% 15%;
 }
 
@@ -51,7 +54,6 @@ p {
 }
 
 .navbar-brand {
-  /* font-family: "Snell Roundhand", cursive; */
 
   font-family: 'Dancing Script', cursive;
   font-size: 2.5rem;
@@ -68,24 +70,13 @@ display:inline-block;
 color: white;
 
 }
-/* .nav-link:hover {
-  display: inline-block;
-  color: #508d9f;
-} */
 
 
-
-
-/* Buttons */
-
-.download-button {
-  margin: 5% 3% 5% 0;
-}
 
 /* Title Section */
 
 #title {
-  background-color: #2d2f3d;
+  background-color: #2d2f3;
   color: #fff;
   text-align: left;
 }
@@ -180,6 +171,8 @@ font-size: 0;
 
 #pricing {
   padding: 100px;
+  overflow: hidden;
+  padding: 5px;
 }
 .le{
   text-align: Center;
@@ -213,6 +206,7 @@ padding-bottom: 2%;
 
 }
 .card{
+  padding: 5px;
   background-color: #2d2f3d;
 }
 .card-title{
@@ -224,7 +218,7 @@ padding-bottom: 2%;
 }
 
 .pricing-column {
-  padding: 3% 2%;
+  padding: 5% 3%;
 }
 
 /* CTA Section */
@@ -266,8 +260,10 @@ padding-bottom: 2%;
     position: static;
     transform: rotate(0);
   }
-  .cir1,.cir2,.sc {
-    visibility: hidden;
+  .sc{
+    display: hidden;
+  }
+  .cir1,.cir2 {
     height: 0px;
     width: 0px;
 
