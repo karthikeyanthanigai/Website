@@ -35,11 +35,10 @@
       <!-- Nav Bar -->
 
       <nav class="navbar navbar-expand-lg">
-
-        <h1 class="navbar-brand"><img src="images/logo.ico" alt="">Karthikeyan Thanigaivelu</h1>
+ <h1 class="navbar-brand"><img src="images/logo.ico" alt="">Karthikeyan Thanigaivelu</h1>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
-          <span class="navbar-toggler-icon" style="height: 5px;width:5px;background-color: white;"></span>
+          <span class="navbar-toggler-icon" style="height: 5px;width:5px;background-color: #112D4E;"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -67,22 +66,53 @@
        <div class="row">
 
 
-        <div class="col-lg-6">
-          <img class="cir2" src="images/bg2.png" alt="">
-          <img class="title-image" src="images/karthi.png" alt="iphone-mockup">
-          <img class="cir1" src="images/bg1.png" alt="">
-        </div>
-
-
 
 
         <div class="col-lg-6">
-          <h5 style="font-style: italic; color:grey;">// THIS IS ME!!</h5>
+
+            <h5 id="demo"></h5><h4 style="font-size:30px;" id="d1"> |</h4>
+
+
+           <script>
+
+           var blink_speed = 700; // every 1000 == 1 second, adjust to suit
+
+           var ii = 0;
+
+           var txt1 = '// THIS IS ME!!';
+           var speed1 = 120;
+           typeWriter1();
+           function typeWriter1() {
+             if (ii < txt1.length) {
+               document.getElementById("demo").innerHTML += txt1.charAt(ii);
+               ii++;
+               setTimeout(typeWriter1, speed1);
+             }}
+
+
+             var t = setInterval(function () {
+                 var string = document.getElementById('d1');
+
+                 string.style.visibility = (string.style.visibility == 'hidden' ? '' : 'hidden');
+             }, blink_speed);
+
+           </script>
+
+
+
           <h3 class="big-heading">A Final Year Computer Science Student</h3>
-          <h3 style="color:grey;">with a passion for <span style="color:white;">Software development, Machine Learning/Artificial Intelligence.</span> Experience in developing both static and dynamic websites and mobile apps.</h3>
-          &nbsp;<p style="text-align: center;color:grey;">Scroll for more ↓</p> 
+  <h3 style="color:grey;">with a passion for <span style="color:#112D4E;">Software development, Machine Learning/Artificial Intelligence.</span> Experience in developing both static and dynamic websites and mobile apps.</h3>
+          &nbsp;<div id="cloud"><p style="text-align: center;color:grey;">Scroll for more ↓</p></div>
 
         </div>
+
+
+                <div class="col-lg-6">
+                  <!-- <img class="cir2" src="images/bg2.png" alt=""> -->
+                  <img class="title-image" src="images/karthi.png" alt="iphone-mockup">
+                  <!-- <img class="cir1" src="images/bg1.png" alt=""> -->
+                </div>
+
 
       </div>
 
@@ -97,50 +127,98 @@
 
 
     <div class="le">
-      <h2 class="he" style="font-style: italic; color:grey;">&lt;!-- Experience --&gt;</h2>
+
+      <h2  id="demo1"></h2><h4 style="color:#52616B;" id="d11"> |</h4>
+
+
+      <script>
+
+      var blink_speed = 700; // every 1000 == 1 second, adjust to suit
+
+      var i = 0;
+
+      var txt = '<!-- Experience -->';
+      var speed = 120;
+      typeWriter();
+      function typeWriter() {
+       if (i < txt.length) {
+         document.getElementById("demo1").innerHTML += txt.charAt(i);
+         i++;
+         setTimeout(typeWriter, speed);
+       }}
+
+
+       var t = setInterval(function () {
+           var string = document.getElementById('d11');
+
+           string.style.visibility = (string.style.visibility == 'hidden' ? '' : 'hidden');
+       }, blink_speed);
+
+      </script>
+
+
+
+
+
       <p class="hee">Some of My Past Experience,</p>
     </div>
     <div class="row">
-      <div class="pricing-column col-lg-4 col-md-6">
+      <div class="pricing-column col-lg-6">
         <div class="card">
-          <img class="card-img-top" src="images/benn.jpeg" alt="Card image cap">
+          <div class="container">
+  <img class="card-img-top" src="images/benn.jpeg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text"><ul>
+  <li>Worked in different Object Detection methods like Deep Extreme Cut, Faster RCNN, Fast Online Object Tracking and Segmentation, etc.</li>
+  <li>Developed and Deployed Fast Online Object Tracking with Deep Video Inpainting in Nvidia Supercomputer.</li>
+
+</ul> </div>
+  </div>
+</div>
+          <!-- <img class="card-img-top" src="images/benn.jpeg" alt="Card image cap"> -->
 
           <div class="card-body">
-            <h5 class="card-title">Student Intern @Bennett University</h5>
+            <h5 class="card-title">Student Intern @Bennett University </h5>
+            <h6>December 2019</h6>
 
-            <a href="https://github.com/karthikeyanthanigai/Deep-Object-Removal-From-Video" class="btn btn-lg btn-block btn-outline-light">See More</a>
+
+
 
           </div>
         </div>
+        <a href="https://github.com/karthikeyanthanigai/Deep-Object-Removal-From-Video" class="btn btn-lg btn-block btn-outline-dark">See More</a>
+
       </div>
 
 
 
-      <div class="pricing-column col-lg-4 col-md-6">
+      <div class="pricing-column col-lg-6">
         <div class="card">
-          <img class="card-img-top" src="images/ras.jpeg" alt="Card image cap">
+          <div class="container">
+  <img class="card-img-top" src="images/rai1.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text"><ul>
+  <li>Implemented Face and Skin Tone Detection using Haar-cascade and k-nearest neighbor algorithm respectively.</li>
+  <li> Deployed production ready Flask container on AWS Beanstalk. Designed back-end database on Firebase's cloud firestorm using Python SDK and deployed in Flutter.</li>
+
+</ul> </div>
+  </div>
+</div>
+          <!-- <img class="card-img-top" src="images/rai1.png" alt="Card image cap"> -->
 
 
           <div class="card-body">
             <h5 class="card-title">Machine Learning Engineer @Raiseln Ventures Private Limited Chennai</h5>
-
-            <a href="https://www.linkedin.com/company/raiseinventures/" class="btn btn-lg btn-block btn-outline-light">See More</a>
+            <h6>June - August 2020</h6>
 
           </div>
+
+
         </div>
+        <a href="https://www.linkedin.com/company/raiseinventures/" class="btn btn-lg btn-block btn-outline-dark">See More</a>
       </div>
 
 
-      <div class="pricing-column col-lg-4">
-        <div class="card">
-          <img class="card-img-top" src="images/upp.jpeg" alt="Card image cap">
-
-
-          <div class="card-body">
-            <h5 class="card-title">Freelance</h5>
-          </div>
-        </div>
-      </div>
     </div>
 
 
@@ -158,7 +236,35 @@
 
 
     <div class="le">
-      <h2 class="he" style="font-style: italic; color:grey;">/* SKILLS */</h2>
+
+      <h2  id="demo12"></h2><h4 style="color:#52616B;" id="d12"> |</h4>
+
+
+      <script>
+
+      var blink_speed = 700; // every 1000 == 1 second, adjust to suit
+
+      var i2 = 0;
+
+      var txt2 = '/* SKILLS */';
+      var speed2 = 120;
+      typeWriter2();
+      function typeWriter2() {
+       if (i2 < txt2.length) {
+         document.getElementById("demo12").innerHTML += txt2.charAt(i2);
+         i2++;
+         setTimeout(typeWriter2, speed2);
+       }}
+
+
+       var t = setInterval(function () {
+           var string = document.getElementById('d12');
+
+           string.style.visibility = (string.style.visibility == 'hidden' ? '' : 'hidden');
+       }, blink_speed);
+
+      </script>
+
       <p class="hee">This are the Different Languages/Services/Framework which I have used in many of my projects!</p>
 
     </div>
@@ -636,24 +742,50 @@
 
   <section class="colored-section" id="testimonials">
     <div class="le">
-      <h2 class="he" style="font-style: italic; color:grey;">""" Testimonials """</h2>
 
+      <h2  id="demo13"></h2><h4 style="color:#52616B;" id="d13"> |</h4>
+
+
+      <script>
+
+      var blink_speed = 700; // every 1000 == 1 second, adjust to suit
+
+      var i3 = 0;
+
+      var txt3 = '""" Testimonials """';
+      var speed3 = 120;
+      typeWriter3();
+      function typeWriter3() {
+       if (i3 < txt3.length) {
+         document.getElementById("demo13").innerHTML += txt3.charAt(i3);
+         i3++;
+         setTimeout(typeWriter3, speed3);
+       }}
+
+
+       var t = setInterval(function () {
+           var string = document.getElementById('d13');
+
+           string.style.visibility = (string.style.visibility == 'hidden' ? '' : 'hidden');
+       }, blink_speed);
+
+      </script>
     </div>
 
 
 
     <div id="testimonial-carousel" class="carousel slide" data-ride="false">
-      <div class="carousel-inner">
+      <div class="carousel-inner" >
         <div class="carousel-item active container-fluid">
-          <h2 class="testimonial-text">I had the opportunity to mentor Karthikeyan in an internship program at Leading India AI, and am pleased to say that he is an excellent, highly motivated student who is always hungry to learn more. In the time
+          <h3 class="testimonial-text">I had the opportunity to mentor Karthikeyan in an internship program at Leading India AI, and am pleased to say that he is an excellent, highly motivated student who is always hungry to learn more. In the time
             that we worked together, I saw first-hand how adept he at the research, and always yearns to dive deep into the concepts needed to solve a particular problem. He is an asset to anyone looking for a sincere employee with a zeal for Machine
-            Learning.</h2>
+            Learning.</h3>
           <img class="testimonial-image" src="images/ans.jpeg" alt="dog-profile">
           <a href="https://www.linkedin.com/in/anshuman73/" class="nav-link"><em>Anshuman Agarwal, CS@Bennett University</em></a>
         </div>
         <div class="carousel-item container-fluid">
-          <h2 class="testimonial-text"> Karthi worked on Inpainting during his time at Bennett where he isolated a specified object from a video using CNN. He is a brilliant student who is very quick to solving tasks and is very prompt in his work.
-            He is also working on understanding ML deployment and other applications of AI and is priming himself to be a ML practitioner with high standards</h2>
+          <h3 class="testimonial-text"> Karthi worked on Inpainting during his time at Bennett where he isolated a specified object from a video using CNN. He is a brilliant student who is very quick to solving tasks and is very prompt in his work.
+            He is also working on understanding ML deployment and other applications of AI and is priming himself to be a ML practitioner with high standards</h3>
           <img class="testimonial-image" src="images/nav.jpeg" alt="lady-profile">
           <a href="https://www.linkedin.com/in/naveen-nanda-m-3a1b40133/" class="nav-link"><em>Naveen Nanda, Data Scientist and Ml Engineer at Acies</em></a>
         </div>
@@ -676,7 +808,33 @@
   <section class="white-section" id="projects">
 
     <div class="le">
-      <h2 class="he" style="font-style: italic; color:grey;">/* Projects */</h2>
+      <h2 id="demo14"></h2><h4 style="color:#52616B;" id="d14"> |</h4>
+
+
+      <script>
+
+      var blink_speed = 700; // every 1000 == 1 second, adjust to suit
+
+      var i4 = 0;
+
+      var txt4 = '/* Projects */';
+      var speed4 = 120;
+      typeWriter4();
+      function typeWriter4() {
+       if (i4 < txt4.length) {
+         document.getElementById("demo14").innerHTML += txt4.charAt(i4);
+         i4++;
+         setTimeout(typeWriter4, speed4);
+       }}
+
+
+       var t = setInterval(function () {
+           var string = document.getElementById('d14');
+
+           string.style.visibility = (string.style.visibility == 'hidden' ? '' : 'hidden');
+       }, blink_speed);
+
+      </script>
       <p class="hee">Some of My Creative Works,</p>
       <p class="he2">Click the below button to see all my projects</p>
       <a href="https://github.com/karthikeyanthanigai" class="hb">Explore more →</a>
@@ -695,7 +853,7 @@
                   <h5 class="card-title">Deep Object Removal From Video</h5>
                   <p class="card-text">
                     A simple Web App integrated with AI systems is implemented which helps the Doctor to diagnose the patients without visiting them.</p>
-                  <a href="https://github.com/karthikeyanthanigai/Deep-Object-Removal-From-Video" class="btn btn-lg btn-block btn-outline-light">See More</a>
+                  <a href="https://github.com/karthikeyanthanigai/Deep-Object-Removal-From-Video" class="btn btn-lg btn-block btn-outline-dark">See More</a>
 
                 </div>
               </div>
@@ -710,7 +868,7 @@
                   <h5 class="card-title">Contactless Covid Tester Web App</h5>
                   <p class="card-text">
                     A simple Web App integrated with AI systems is implemented which helps the Doctor to diagnose the patients without visiting them.</p>
-                  <a href="https://github.com/karthikeyanthanigai/Contactless_Covid_Tester_Web_App" class="btn btn-lg btn-block btn-outline-light">See More</a>
+                  <a href="https://github.com/karthikeyanthanigai/Contactless_Covid_Tester_Web_App" class="btn btn-lg btn-block btn-outline-dark">See More</a>
 
                 </div>
               </div>
@@ -725,7 +883,7 @@
                 <div class="card-body">
                   <h5 class="card-title">AI Based smart waste segregating bin</h5>
                   <p class="card-text">A Trash bin is designed such that it takes the input waste from the user and classifies it majorly as plastic/paper/metal and pushes the waste to the respective bin.</p>
-
+  <a href="https://dharineeshramtp2000.github.io/BinTez/" class="btn btn-lg btn-block btn-outline-dark">See More</a>
                 </div>
               </div>
             </div>
@@ -743,8 +901,33 @@
   <section class="colored-section" id="cta">
 
     <div class="le">
-      <h2 class="he" style="font-style: italic; color:grey;"># Accomplishments</h2>
+      <h2 id="demo15"></h2><h4 style="color:#52616B;"id="d15"> |</h4>
 
+
+      <script>
+
+      var blink_speed = 700; // every 1000 == 1 second, adjust to suit
+
+      var i5 = 0;
+
+      var txt5 = '# Accomplishments';
+      var speed5 = 120;
+      typeWriter5();
+      function typeWriter5() {
+       if (i5 < txt5.length) {
+         document.getElementById("demo15").innerHTML += txt5.charAt(i5);
+         i5++;
+         setTimeout(typeWriter5, speed5);
+       }}
+
+
+       var t = setInterval(function () {
+           var string = document.getElementById('d15');
+
+           string.style.visibility = (string.style.visibility == 'hidden' ? '' : 'hidden');
+       }, blink_speed);
+
+      </script>
     </div>
 
 
@@ -799,14 +982,39 @@
 
     <div class="container-fluid">
 
-      <h2 class="fo" style="font-style: italic; color:grey;">// Contact</h2>
+      <h2 class="fo" id="demo16"></h2><h4 style="color:#52616B;"id="d16"> |</h4>
+
+
+      <script>
+
+      var blink_speed = 700; // every 1000 == 1 second, adjust to suit
+
+      var i6 = 0;
+
+      var txt6 = '// Contact';
+      var speed6 = 120;
+      typeWriter6();
+      function typeWriter6() {
+       if (i6 < txt6.length) {
+         document.getElementById("demo16").innerHTML += txt6.charAt(i6);
+         i6++;
+         setTimeout(typeWriter6, speed6);
+       }}
+
+
+       var t = setInterval(function () {
+           var string = document.getElementById('d16');
+
+           string.style.visibility = (string.style.visibility == 'hidden' ? '' : 'hidden');
+       }, blink_speed);
+
+      </script>
 
 
 
 
 
-
-      <div class="hi" style="text-align:Center; color:white;padding-top:7%;">
+      <div class="hi" style="text-align:Center; color:#112D4E;padding-top:7%;">
         <h2>Got a Project?</h2>
         <h2>Let's Talk</h2>
 
@@ -817,13 +1025,12 @@
       <h1 class="rand"><img src="images/logo.ico" alt="">Karthikeyan Thanigaivelu</h1>
 
 
-      <a href="https://www.facebook.com/karthikeyan.thanigaivel.73/"><i class="fab fa-facebook-f " style="color:white;"></i></a>
+      <a href="https://www.facebook.com/karthikeyan.thanigaivel.73/"><i class="fab fa-facebook-f " style="color:#112D4E;"></i></a>
       &nbsp;
-      <a href="https://www.instagram.com/karthikeyanthanigaivel/"><i class="fab fa-instagram " style="color:white;"></i></a>&nbsp;
-      <a href="https://github.com/karthikeyanthanigai"><i class="fab fa-github " style="color:white;"></i></a>&nbsp;
-      <a href="https://www.linkedin.com/in/karthikeyanthanigai/"> <i class="fab fa-linkedin-in " style="color:white;"></i></a>&nbsp;
-      <a href="https://www.hackerrank.com/ktv0303"> <i class="fab fa-hackerrank " style="color:white;"></i></a>&nbsp;
-      <a href="https://medium.com/@ktv0303"><i class="fab fa-medium " style="color:white;"></i></a>
+      <a href="https://www.instagram.com/karthikeyanthanigaivel/"><i class="fab fa-instagram " style="color:#112D4E;"></i></a>&nbsp;
+      <a href="https://github.com/karthikeyanthanigai"><i class="fab fa-github " style="color:#112D4E;"></i></a>&nbsp;
+      <a href="https://www.linkedin.com/in/karthikeyanthanigai/"> <i class="fab fa-linkedin-in " style="color:#112D4E;"></i></a>&nbsp;
+      <a href="https://medium.com/@ktv0303"><i class="fab fa-medium " style="color:#112D4E;"></i></a>
 
 
     </div>

@@ -1,18 +1,84 @@
 
 body {
-
+cursor: text;
   font-family: "Montserrat";
   text-align: center;
   margin: 0;
 
 }
 
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #112D4E;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat-Bold";
 }
-
+h4{
+  display: inline;
+  font-size: 40px;
+  color:#112D4E;
+}
+h2,h5{
+    display: inline;
+    font-style: italic;
+    color:#112D4E;
+}
 p {
   color: #8f8f8f;
+}
+
+#cloud {
+opacity: 1;
+ position: relative;
+ top: 50px;
+ color: #eee;
+ animation: floatt 3.5s infinite ease-in-out;
+}
+
+@keyframes floatt {
+   50% {
+       top: 60px;
+   }
+   100% {
+       top: 50px;
+   }
 }
 
 /* Headings */
@@ -39,12 +105,16 @@ p {
 /* Sections */
 
 .colored-section {
-  background-color: #2d2f3d;
-  color: #fff;
+  /* #222831 */
+  background-color: #F9F7F7;
+  color: #000;
+
 }
 
 .white-section {
-  background-color: #21232d;
+  /* #393E46 */
+  background-color:#DBE2EF;
+
 }
 
 /* Navigation Bar */
@@ -67,7 +137,7 @@ p {
 .nav-link {
   font-size: 1.2rem;
 display:inline-block;
-color: white;
+color: #112D4E;
 
 }
 
@@ -77,7 +147,7 @@ color: white;
 
 #title {
   background-color: #2d2f3;
-  color: #fff;
+  color: #3F72AF;
   text-align: left;
 }
 
@@ -89,11 +159,13 @@ color: white;
 /* Title Image */
 
 .title-image {
-  width: 85%;
+  /* width: 85%;
   height: 230%;
-  transform: rotate(2deg);
+   */
+   transform: rotate(2deg);
   position: absolute;
-  right: 30%;
+  left: 50%
+  /* right: 30%; */
 }
 .cir1{
   position: relative;
@@ -142,7 +214,7 @@ font-size: 0;
 /* Testimonial Section */
 
 #testimonials {
-  background-color: #2d2f3d;
+  background-color: #F9F7F7;
 }
 
 .testimonial-text {
@@ -175,6 +247,7 @@ font-size: 0;
   padding: 5px;
 }
 .le{
+  padding-top: 5%;
   text-align: Center;
 
 }
@@ -188,7 +261,7 @@ font-size: 0;
 }
 .hee{
 
-  color: white;
+  color: #112D4E;
 
   font-size: 1.5rem;
   line-height: 1.5;
@@ -207,10 +280,10 @@ padding-bottom: 2%;
 }
 .card{
   padding: 5px;
-  background-color: #2d2f3d;
+  background-color: #F9F7F7;
 }
 .card-title{
-  color: white;
+  color: #112D4E;
 }
 .price-text {
   font-size: 3rem;
@@ -230,7 +303,7 @@ padding-bottom: 2%;
 }
 .fo{
 
-    color: grey;
+    color:#52616B;
 
     font-size: 2.5rem;
 
@@ -243,7 +316,7 @@ padding-bottom: 2%;
 
   font-family: 'Dancing Script', cursive;
   font-size: 2.5rem;
-  color: white;
+  color: #112D4E;
     font-weight: bold;
 }
 
